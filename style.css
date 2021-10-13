@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #eaeded;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  gap: 3rem 0;
+}
+
+.cards {
+  background: white;
+  width: 80vw;
+  max-width: 39rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 15px #c0c8c9;
+}
+
+.text-info {
+  display: grid;
+  place-items: center;
+}
+
+.main-title {
+  font-family: sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  font-size: 2.25rem;
+}
+
+.underline {
+  background-color: rgb(70, 173, 241);
+  width: 5rem;
+  height: 4px;
+  margin-top: 0.5rem;
+}
+
+.img-container {
+  display: grid;
+  place-items: center;
+  margin: 1.2rem 0;
+}
+
+.person-img {
+  display: grid;
+  place-items: center;
+  background: rgb(70, 173, 241);
+  border-radius: 50%;
+  position: relative;
+  height: 9.5rem;
+  width: 9.5rem;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+}
+
+.fa-quote-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(70, 173, 241);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.section-center {
+  display: grid;
+  place-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.name {
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-size: 1.075rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.profession {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.about {
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(143, 141, 141);
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    font-size: 1.075rem;
+  }
+}
+
+.change {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.25rem;
+}
+
+.change > * {
+  color: rgb(118, 196, 248);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.change > *:hover {
+  color: rgb(70, 173, 241);
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(237, 246, 252);
+  text-transform: capitalize;
+  color: rgb(70, 173, 241);
+  border: 2px solid rgb(70, 173, 241);
+  margin: 0.8rem 0 1.25rem 0;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background-color: rgb(70, 173, 241);
+  color: black;
+}
